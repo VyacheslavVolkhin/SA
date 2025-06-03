@@ -3330,6 +3330,7 @@ select.form-input:required:invalid {
   height: 28px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  border-radius: 50%;
 }
 .frm-select-item .button-title {
   -ms-flex: 1;
