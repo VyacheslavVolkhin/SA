@@ -1,0 +1,251 @@
+/* ----------------------------------- *\
+			forms elements styles
+\* ----------------------------------- */
+.frm-field-select {
+	display: block;
+	position: relative;
+	flex-shrink: 0;
+	.select-content-block {
+		display: none;
+		width: 240px;
+		position: absolute;
+		top: 100%;left: 0;
+		z-index: 20;
+		margin-top: 10px;
+	}
+	.button-select {
+		.button-title {
+			display: block;
+			position: relative;
+			max-width: 100%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+}
+.frm-field-select-panel {
+	display: flex;
+	width: 100%;
+	background: var(--clr-bg);
+	border: 1px solid var(--clr-border);
+	padding: 1px;
+	border-radius: 14px;
+	position: relative;
+	overflow: hidden;
+	.frm-select-button {
+		width: auto;
+		flex: 1;
+	}
+}
+.frm-field-counter {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	background: var(--clr-bg);
+	border: 1px solid var(--clr-border);
+	height: 36px;
+	border-radius: 16px;
+	padding: 0 40px;
+	.button-plus, .button-minus {
+		width: 36px;height: 36px;
+		position: absolute;
+		top: 50%;left: 26px;
+		margin: -18px 0 0 -18px;
+		z-index: 2;
+	}
+	.button-plus {
+		left: auto;
+		right: 26px;
+		margin: -18px -18px 0 0;
+	}
+	.form-input {
+		height: 34px;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		border: none;
+		border-radius: 0;
+		background: transparent;
+		font-size: var(--fsize);
+		font-weight: 500;
+		color: var(--clr-base);
+	}
+}
+.frm-main-search {
+	display: block;
+	position: relative;
+	line-height: 1;
+	width: 100%;
+	.form-input {
+		height: 36px;
+		border-radius: 20px;
+		padding: 0 50px 0 15px;
+		font-size: var(--fsizeButton);
+		font-weight: 400;
+	}
+	.button-form {
+		width: 44px;
+		height: 36px;
+		position: absolute;
+		top: 50%;right: 0;
+		margin-top: -18px;
+		z-index: 2;
+	}
+}
+.frm-row,
+.frm-field,
+.frm-row-submit {
+    display: flex;
+    flex-wrap: wrap;
+	position: relative;
+	line-height: 1;
+}
+.frm-field {
+    display: block;
+    width: 100%;
+}
+.frm-content {
+	&:not(.active) {
+		display: none;
+	}
+}
+.frm-select, .frm-select-button, .frm-select-item {
+	position: relative;
+	display: block;
+	overflow: hidden;
+    line-height: 1;
+	input {
+		display: block;
+		position: absolute;
+		top: 0;left: 0;
+		width: 0;height: 0;
+		opacity: 0;
+		margin: 0;
+		padding: 0;
+		&:checked {
+			&~label {
+				font-weight: 500;
+				color: var(--clr-base);
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	label {
+		display: block;
+		position: relative;
+		cursor: pointer;
+        &:before, &:after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+		&:after {
+			opacity: 0;
+		}
+	}
+}
+
+
+.frm-select {
+	input {
+		&:checked {
+			&~label {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	label {
+		&:before, &:after {
+			
+		}
+		&:after {
+			border-radius: 0;
+			border: none;
+			background: url(../img/icons/chk.svg) center / 24px auto no-repeat;
+			opacity: 0;
+		}
+	}
+	a {
+		color: inherit;
+		&:hover {
+			color: var(--clr-att);
+		}
+	}
+}
+.frm-select-item {
+	&.select-second {
+		label {
+			border-radius: 12px;
+		}
+	}
+	label {
+		display: flex;
+		align-items: center;
+		padding: 8px 12px;
+		border-radius: 37px;
+		transition: all ease 0.2s;
+	}
+	.button-ico {
+		width: 28px;
+		height: 28px;
+		flex-shrink: 0;
+	}
+	.button-title {
+		flex: 1;
+		padding-left: 8px;
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+}
+.frm-select-button {
+	font-size: 12px;
+	line-height: 1;
+	color: var(--clr-base-second);
+	text-align: center;
+	display: block;
+	flex-shrink: 0;
+	input {
+		&:checked {
+			&~label {
+				background-color: var(--clr-att-select);
+			}
+		}
+	}
+	label {
+		display: flex;
+		align-items: center;
+		height: 28px;
+		padding: 0 24px;
+		border-radius: 14px;
+	}
+	.lbl-title {
+		display: block;
+		width: 100%;
+		position: relative;
+		max-width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}
+@media (min-width: 1024px) {
+	.frm-field-counter {
+		height: 42px;
+		.form-input {
+			height: 40px;
+		}
+	}
+	.frm-select-button {
+		font-size: 14px;
+		label {
+			height: 32px;
+		}
+	}
+}
