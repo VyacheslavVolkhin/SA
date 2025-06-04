@@ -369,6 +369,45 @@ document.addEventListener("DOMContentLoaded", function () {
 	navigation: false,
   
   });
+
+
+
+  //slider media thumbs preview
+  const swiperMediaPreview = new Swiper(".slider-media-thumbs .swiper",
+  {
+	loop: false,
+	slidesPerView: 4,
+	spaceBetween: 0,
+	threshold: 5,
+	watchSlidesVisibility: true,
+	watchSlidesProgress: true,
+	freeMode: false,
+	navigation: {
+	  nextEl: ".button-slider-media-thumbs-next",
+	  prevEl: ".button-slider-media-thumbs-prev",
+	},
+  });
+  
+  //slider media thumbs main
+  const swiperMediaMain = new Swiper(".slider-media-main .swiper",
+  {
+	loop: false,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	autoHeight: true,
+	speed: 400,
+	threshold: 5,
+	freeMode: false,
+	watchSlidesProgress: true,
+	navigation: {
+	  nextEl: ".button-slider-media-main-next",
+	  prevEl: ".button-slider-media-main-prev",
+	},
+	pagination: false,
+	thumbs: {
+	  swiper: swiperMediaPreview,
+	},
+  });
   
   
   

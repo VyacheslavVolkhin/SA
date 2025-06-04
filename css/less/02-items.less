@@ -106,10 +106,6 @@
 	}
 	.tile-button-action {
 		flex-shrink: 0;
-		.btn-action-ico {
-			width: 36px;height: 36px;
-			border-radius: 12px;
-		}
 	}
 	.btn {
 		width: 100%;
@@ -196,6 +192,7 @@
 		font-weight: 500;
 		color: var(--clr-base);
 		flex-shrink: 0;
+		padding-right: 10px;
 		&.price-old {
 			font-size: 12px;
 			line-height: 1.25;
@@ -203,7 +200,6 @@
 			color: var(--clr-base-second);
 			text-align: right;
 			flex: 1;
-			padding-left: 10px;
 		}
 	}
 	.tile-photo {
@@ -865,10 +861,6 @@
 			margin-bottom: 2px;
 		}
 		.tile-button-action {
-			.btn-action-ico {
-				width: 42px;height: 42px;
-				border-radius: 16px;
-			}
 		}
 	}
 	.bg-box {
@@ -883,8 +875,10 @@
 			margin-top: 20px;
 		}
 		.tile-price-wrap {
+			flex-wrap: wrap;
 			.tile-sticker {
 				display: block;
+				margin-left: 0;
 			}
 		}
 		.tile-title-wrap {
@@ -905,9 +899,9 @@
 		}
 		.tile-price {
 			font-size: 2.2rem;
+			padding-right: 12px;
 			&.price-old {
 				font-size: 16px;
-				padding-left: 12px;
 				text-align: left;
 				padding-bottom: 4px;
 			}

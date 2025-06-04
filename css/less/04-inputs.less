@@ -318,6 +318,17 @@ select.form-input:required:invalid {
             box-shadow: none;
         }
     }
+	&.button-action-border {
+		width: 36px;height: 36px;
+		border: 1px solid var(--clr-att);
+		border-radius: 12px;
+		&:hover {
+			border-color: var(--clr-base-title);
+			&:before {
+				filter: brightness(0) grayscale(1);;
+			}
+		}
+	}
 	&.ico-search {
 		&:before {
 			background-image: url(../img/icons/search.svg);
@@ -411,17 +422,8 @@ select.form-input:required:invalid {
         }
     }
     &.ico-close {
-		width: 36px;height: 36px;
-		border: 1px solid var(--clr-att);
-		border-radius: 12px;
 		&:before {
 			background-image: url(../img/icons/close.svg);
-		}
-		&:hover {
-			border-color: var(--clr-base-title);
-			&:before {
-				filter: brightness(0) grayscale(1);;
-			}
 		}
     }
     &.button-soc {
@@ -484,6 +486,10 @@ select.form-input:required:invalid {
 		height: 42px;
 	}
 	.btn-action-ico {
+		&.button-action-border {
+			width: 42px;height: 42px;
+			border-radius: 16px;
+		}
 		&.ico-close {
 			width: 42px;height: 42px;
 		}
