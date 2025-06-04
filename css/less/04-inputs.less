@@ -111,8 +111,11 @@ select.form-input:required:invalid {
 	&.button-select {
 		padding-left: 15px;
 		padding-right: 43px;
+		height: 40px;
+		border-radius: 20px;
+		font-size: 14px;
 		&:before {
-			background: url(../img/icons/arrow-select.svg) right 10px center no-repeat;
+			background: url(../img/icons/arrow-select.svg) right 12px center no-repeat;
 			background-size: 24px auto;
 			filter: none;
 		}
@@ -335,22 +338,14 @@ select.form-input:required:invalid {
 			border-color: #C2342F;
 		}
 	}
-	&.ico-plus, &.ico-minus {
-		&:before, &:after {
-			width: 16px;height: 2px;
-			background: var(--clr-att);
-			top: 50%;left: 50%;
-			right: auto;
-			bottom: auto;
-			margin: -1px 0 0 -8px;
-		}
+	&.ico-plus {
 		&:before {
-			rotate: 90deg;
+			background-image: url(../img/icons/plus.svg);
 		}
 	}
 	&.ico-minus {
 		&:before {
-			display: none;
+			background-image: url(../img/icons/minus.svg);
 		}
 	}
     &.ico-arrow {
@@ -363,9 +358,8 @@ select.form-input:required:invalid {
 				filter: brightness(0) invert(1);
 			}
 			&:hover {
-				&:before {
-					filter: none;
-				}
+				background: #74A1CB;
+				border-color: #74A1CB;
 			}
 		}
         &:before {
@@ -374,6 +368,12 @@ select.form-input:required:invalid {
         }
 		&.swiper-button-disabled {
 			opacity: 0.5;
+			cursor: default;
+			&:hover {
+				&:before {
+					filter: brightness(0) invert(1);
+				}
+			}
 		}
     }
     &.ico-arrow-prev {
@@ -411,22 +411,18 @@ select.form-input:required:invalid {
         }
     }
     &.ico-close {
-        &:after, &:before {
-            width: 20px;
-            height: 2px;
-            top: 50%;
-            left: 50%;
-            bottom: auto;
-            right: auto;
-            margin: -1px 0 0 -10px;
-            background: var(--clr-base);
-        }
-        &:before {
-            .t-rotate(45deg);
-        }
-        &:after {
-            .t-rotate(-45deg);
-        }
+		width: 36px;height: 36px;
+		border: 1px solid var(--clr-att);
+		border-radius: 12px;
+		&:before {
+			background-image: url(../img/icons/close.svg);
+		}
+		&:hover {
+			border-color: var(--clr-base-title);
+			&:before {
+				filter: brightness(0) grayscale(1);;
+			}
+		}
     }
     &.button-soc {
         img, svg {
@@ -488,6 +484,9 @@ select.form-input:required:invalid {
 		height: 42px;
 	}
 	.btn-action-ico {
+		&.ico-close {
+			width: 42px;height: 42px;
+		}
 		&.ico-arrow {
 			width: 44px;height: 44px;
 		}
