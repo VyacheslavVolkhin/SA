@@ -114,6 +114,11 @@
 .item-tile-catalog {
 	display: flex;
 	padding: 4px;
+	&.tile-collection {
+		.tile-photo {
+			height: 311px;
+		}
+	}
 	.tile-price-wrap {
 		display: flex;
 		justify-content: space-between;
@@ -729,6 +734,16 @@
 	font-weight: 400;
 	display: flex;
 	align-items: center;
+	&.type-line {
+		display: block;
+		.tile-feature-title,
+		.tile-feature-value {
+			display: inline;
+			width: auto;
+			text-align: left;
+			max-width: inherit;
+		}
+	}
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -753,6 +768,12 @@
 	}
 	.ico-large {
 		width: 24px;height: 24px;
+	}
+	.elm-color {
+		width: 24px;height: 24px;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 3px 5px 0 0;
 	}
 }
 .elm-dropdown {
@@ -871,6 +892,12 @@
 		}
 	}
 	.item-tile-catalog {
+		&.tile-collection {
+			padding: 6px;
+			.tile-photo {
+				height: 309px;
+			}
+		}
 		.tile-actions-panel {
 			margin-top: 20px;
 		}

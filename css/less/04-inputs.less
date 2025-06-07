@@ -18,6 +18,17 @@
 	font-size: 16px;
 	letter-spacing: -0.01em;
 	color: var(--clr-base);
+	&.inp-filter {
+		height: 30px;
+		background: none;
+		padding: 0;
+		border: none;
+		border-bottom: 1px solid var(--clr-border);
+		font-size: 14px;
+		font-weight: 400;
+		border-radius: 0;
+		color: var(--clr-att);
+	}
 }
 textarea.form-input {
 
@@ -88,6 +99,36 @@ select.form-input:required:invalid {
 			filter: none;
 		}
 	}
+	&.button-tab {
+		height: 38px;
+		padding: 0 16px;
+		border-radius: 0;
+		border: none;
+		background: none;
+		font-size: 18px;
+		font-weight: 500;
+		color: var(--clr-base-second);
+		&:hover, &.active {
+			color: var(--clr-base);
+		}
+		&.active {
+			&:before {
+				opacity: 1;
+			}
+		}
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 16px;
+			right: 16px;
+			height: 2px;
+			background: var(--clr-base);
+			opacity: 0;
+			transition: opacity ease 0.2s;
+		}
+	}
 	&.button-select,
 	&.button-arrow {
 		text-align: left;
@@ -114,10 +155,92 @@ select.form-input:required:invalid {
 		height: 40px;
 		border-radius: 20px;
 		font-size: 14px;
+		&:has(.button-ico:only-child) {
+			overflow: visible;
+			width: 40px;
+			padding: 0;
+			.button-ico {
+				margin: 0 auto;
+			}
+			&:before {
+				display: none;
+			}
+			&[data-count] {
+				&:after {
+					height: 14px;
+					min-width: 14px;
+					line-height: 14px;
+					border-radius: 7px;
+					padding: 0 4px;
+					font-size: 8px;
+					position: absolute;
+					top: -2px;
+					right: -2px;;
+					margin: 0;
+				}
+			}
+		}
 		&:before {
-			background: url(../img/icons/arrow-select.svg) right 12px center no-repeat;
+			background: url(../img/icons/arrow-select.svg) center no-repeat;
 			background-size: 24px auto;
+			width: 24px;
+			right: 12px;
 			filter: none;
+		}
+		&.active {
+			&:before {
+				rotate: 180deg;
+			}
+		}
+		&[data-count] {
+			&:after {
+				display: none;
+				height: 24px;
+				min-width: 24px;
+				line-height: 24px;
+				border: none;
+				margin: 0 0 0 8px;
+				flex-shrink: 0;
+				background: var(--clr-att);
+				color: #fff;
+				font-size: 13px;
+				font-weight: 500;
+				border-radius: 12px;
+				padding: 0 6px;
+				position: relative;
+				top: auto;
+				bottom: auto;
+				left: auto;
+				right: auto;
+				margin-right: -7px;
+			}
+		}
+	}
+	&:not(.js-field-button-select) {
+		[data-placeholder] {
+			&:before {
+				content: attr(data-placeholder);
+			}
+		}
+	}
+	&.button-select-counter {
+		[data-placeholder] {
+			height: 20px;
+			line-height: 20px;
+			position: relative;
+			overflow: hidden;
+			font-size: 0;
+			&:before {
+				content: attr(data-placeholder);
+				display: block;
+				font-size: 14px;
+			}
+		}
+		&[data-count] {
+			background: var(--clr-att-second);
+			&:after {
+				display: block;
+			}
 		}
 	}
 	&.button-second {
@@ -157,11 +280,15 @@ select.form-input:required:invalid {
 		}
 		&:hover {
 			color: var(--clr-base-title);
-			border-color: var(--clr-bg-blue);
-			background-color: var(--clr-bg-blue);
+			border-color: var(--clr-att);
+			background-color: var(--clr-bg-second);
 			.button-ico {
 				filter: none;
 			}
+		}
+		&.selected {
+			background: var(--clr-att-second);
+			border-color: var(--clr-att-second);
 		}
 	}
 	&.button-link {
@@ -265,6 +392,7 @@ select.form-input:required:invalid {
 			}
 		}
 	}
+	
 }
 .btn-action-ico {
     min-width: 0;
@@ -357,6 +485,19 @@ select.form-input:required:invalid {
 	&.ico-minus {
 		&:before {
 			background-image: url(../img/icons/minus.svg);
+		}
+	}
+	&.ico-del {
+		&:before {
+			background-image: url(../img/icons/del.svg);
+			opacity: 0.6;
+			filter: brightness(0) grayscale(1);;
+		}
+		&:hover {
+			&:before {
+				opacity: 1;
+				filter: none;
+			}
 		}
 	}
     &.ico-arrow {
@@ -484,6 +625,10 @@ select.form-input:required:invalid {
 	}
 	.btn {
 		height: 42px;
+		&.button-tab {
+			height: 42px;
+			font-size: 22px;
+		}
 	}
 	.btn-action-ico {
 		&.button-action-border {

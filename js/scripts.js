@@ -5,17 +5,80 @@ document.addEventListener("DOMContentLoaded", function () {
     //settings
   });
 
+
+  //mobile filter functionals
+  let buttonsFilterBack = document.querySelectorAll('.js-filter-back');
+  let buttonFilterShow = document.querySelector('.js-filter-show');
+	buttonFilterShow.addEventListener('click', function(event) {
+		document.body.classList.add('filter-showed');
+		event.preventDefault();
+	});
+    buttonsFilterBack.forEach(function(buttonFilterBack) {
+        buttonFilterBack.addEventListener('click', function(event) {
+            if (this.closest('.js-popup-wrap')) {
+                let popupWrap = this.closest('.js-popup-wrap');
+                if (popupWrap) {
+                    let toggleButton = popupWrap.querySelector('.js-btn-popup-toggle');
+                    if (toggleButton) {
+                        toggleButton.classList.remove('active');
+                    }
+                }
+            } else {
+                document.body.classList.remove('filter-showed');
+            }
+			event.preventDefault();
+        });
+    });
+
+
+  //form input clear
+  const inputFields = document.querySelectorAll(".frm-field-input-action .form-input");
+  const clearButtons = document.querySelectorAll(".button-field-clear");
+  
+  for (let i = 0; i < inputFields.length; i++) {
+	const inputField = inputFields[i
+	];
+	const form = inputField.closest(".frm-field-input-action");
+  
+	inputField.addEventListener("input", function () {
+	  if (inputField.value.length > 0) {
+		form.classList.add("inp-valid");
+		} else {
+		form.classList.remove("inp-valid");
+		}
+	});
+  }
+  for (let i = 0; i < clearButtons.length; i++) {
+	const clearButton = clearButtons[i
+	];
+	clearButton.addEventListener("click", function (event) {
+	  this.closest(".frm-field-input-action").querySelector(".form-input").value = "";
+	  this.closest(".frm-field-input-action").classList.remove("inp-valid");
+	  event.preventDefault();
+	});
+  }
+
+  
+
   //field-select checkboxes
   const buttonSelects = document.querySelectorAll('.js-field-button-select');
+  
   function updateButtonTitle(button) {
-	const checkboxes = button.closest('.js-field-select').querySelectorAll('.frm-select-item input[type="checkbox"]');
+	const checkboxes = button.closest('.js-field-select').querySelectorAll(' input[type="checkbox"]');
 	const selectedTexts = Array.from(checkboxes)
 		.filter(checkbox => checkbox.checked)
 		.map(checkbox => checkbox.nextElementSibling.textContent);
-  
+	
 	const buttonTitle = button.querySelector('.button-title');
 	buttonTitle.textContent = selectedTexts.length > 0 ? selectedTexts.join(', ') : buttonTitle.dataset.placeholder;
+  
+	if (selectedTexts.length > 0) {
+		button.setAttribute('data-count', selectedTexts.length);
+	} else {
+		button.removeAttribute('data-count');
+	}
   }
+  
   buttonSelects.forEach(button => {
 	updateButtonTitle(button);
 	button.addEventListener('click', function (e) {
@@ -25,16 +88,17 @@ document.addEventListener("DOMContentLoaded", function () {
 				otherButton.classList.remove('active');
 			}
 		});
-		//this.classList.toggle('active');
 		updateButtonTitle(this);
 	});
-	const checkboxes = button.closest('.js-field-select').querySelectorAll('.frm-select-item input[type="checkbox"]');
+	
+	const checkboxes = button.closest('.js-field-select').querySelectorAll(' input[type="checkbox"]');
 	checkboxes.forEach(checkbox => {
 		checkbox.addEventListener('change', function () {
 			updateButtonTitle(button);
 		});
 	});
   });
+  
   document.addEventListener('click', function (e) {
 	if (!e.target.closest('.js-field-select')) {
 		buttonSelects.forEach(button => {
@@ -44,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
   });
+  
   document.addEventListener('click', function (e) {
 	if (!e.target.closest('.js-field-select')) {
 		buttonSelects.forEach(button => {
@@ -51,6 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
   });
+
 
 
 
@@ -249,6 +315,56 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  //js tabs
+  const tabsNav = document.querySelectorAll('.js-tabs-nav')
+  const tabsBlocks = document.querySelectorAll('.js-tab-block')
+  const tabsButtonTitle = document.querySelectorAll('.js-tab-title')
+  const tabsButtonContent = document.querySelectorAll('.js-tab-content')
+  function tabsActiveStart() {
+	for (iTab = 0; iTab < tabsBlocks.length; iTab++) {
+		if (tabsBlocks[iTab].classList.contains('active')) {
+			tabsBlocks[iTab].classList.remove('active')
+		}
+	}
+	for (i = 0; i < tabsNav.length; i++) {
+		let tabsNavElements = tabsNav[i].querySelectorAll('[data-tab]')
+		for (iElements = 0; iElements < tabsNavElements.length; iElements++) {
+			if (tabsNavElements[iElements].classList.contains('active')) {
+				let tabsNavElementActive = tabsNavElements[iElements].dataset.tab
+				for (j = 0; j < tabsBlocks.length; j++) {
+					if (tabsBlocks[j].dataset.tab.toString().indexOf(tabsNavElementActive) > -1) {
+						console.log(tabsBlocks[j].dataset.tab.toString().indexOf(tabsNavElementActive))
+						tabsBlocks[j].classList.add('active')
+					}
+				}
+			}
+		}
+	}
+	
+  }
+  for (i = 0; i < tabsButtonTitle.length; i++) {
+	tabsButtonTitle[i].addEventListener('click', function (e) {
+		this.classList.toggle('active')
+		e.preventDefault()
+		e.stopPropagation()
+		return false
+	})
+  }
+  for (i = 0; i < tabsNav.length; i++) {
+	tabsNav[i].addEventListener('click', function (e) {
+		if (e.target.closest('[data-tab]')) {
+			let tabsNavElements = this.querySelector('[data-tab].active')
+			tabsNavElements ? tabsNavElements.classList.remove('active') : false
+			e.target.closest('[data-tab]').classList.add('active')
+			tabsActiveStart()
+			e.preventDefault()
+			e.stopPropagation()
+			return false
+		}
+	})
+  }
+  tabsActiveStart()
+
   // Popups
   let popupCurrent;
   let popupsList = document.querySelectorAll(".popup-outer-box");
@@ -293,6 +409,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+
+  //slider filter
+  const swiperSliderFilter = new Swiper('.slider-filter .swiper', {
+	loop: false,
+	slidesPerView: 'auto',
+	spaceBetween: 0,
+	autoHeight: true,
+	speed: 400,
+	pagination: false,
+	autoplay: false,
+	navigation: false,
+	freeMode: true,
+  });
+
 
   //slider tilesMain
   const swiperSlidersliderName = new Swiper(".slider-tilesMain .swiper", {
