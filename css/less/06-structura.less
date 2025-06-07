@@ -154,6 +154,15 @@ html.with-fancybox body.hide-scrollbar {
 	}
 }
 .popup-menu-wrap {
+	.popup-title-wrap {
+		display: none;
+	}
+	.popup-action-wrap {
+		display: none;
+	}
+	.submenu-title-wrap {
+		display: none;
+	}
 	.btn-popup-close {
 		display: none;
 	}
@@ -223,6 +232,7 @@ html.with-fancybox body.hide-scrollbar {
 		transition: all ease 0.2s;
 		border-radius: 16px;
 		font-weight: 500;
+		border: 1px solid transparent;
 		&.color-red {
 			color: rgba(185, 7, 1, 0.80);
 			&:hover {
@@ -235,9 +245,14 @@ html.with-fancybox body.hide-scrollbar {
 				display: none;
 			}
 		}
-		&:hover, &.active {
+		
+		&.active {
 			color: var(--clr-base);
 			background: var(--clr-att-second);
+			&:hover {
+				border-color: var(--clr-att);
+				background: none;
+			}
 		}
 		&:before {
 			content: "";
@@ -700,7 +715,7 @@ html.with-fancybox body.hide-scrollbar {
 			transform: translateX(-50%);
 			z-index: 20;
 			background: var(--clr-bg-blue);
-			padding: 32px;
+			padding: 0 0 0 32px;
 			display: none;
 			width: 100%;
 			margin-top: 32px;
@@ -709,8 +724,13 @@ html.with-fancybox body.hide-scrollbar {
 			display: none;
 			position: absolute;
 			top: 0;left: 100%;
-			width: calc(100dvw - 32px - 32px - 260px);
-			max-width: calc(var(--max) - 32px - 32px - 260px);
+			width: calc(100dvw  - 32px - 260px);
+			max-width: calc(var(--max)  - 32px - 260px);
+			max-height: calc(100dvh - 200px);
+			padding: 32px 32px 32px 0;
+			overflow-y: auto;
+		}
+		.submenu-menu-wrap {
 			&>.menu {
 				display: flex;
 				flex-wrap: wrap;
@@ -738,6 +758,7 @@ html.with-fancybox body.hide-scrollbar {
 		.menu-main {
 			width: 260px;
 			position: relative;
+			padding: 32px 0;
 			&>li {
 				&>.btn-menu {
 					max-width: 203px;
@@ -814,7 +835,7 @@ html.with-fancybox body.hide-scrollbar {
 	}
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
-	.popup-menu-wrap .submenu-inner-wrap>.menu>li {
+	.popup-menu-wrap .submenu-menu-wrap>.menu>li {
 		width: 33.33%;
 	}
 	.footer-main-panel {

@@ -9,26 +9,28 @@ document.addEventListener("DOMContentLoaded", function () {
   //mobile filter functionals
   let buttonsFilterBack = document.querySelectorAll('.js-filter-back');
   let buttonFilterShow = document.querySelector('.js-filter-show');
-	buttonFilterShow.addEventListener('click', function(event) {
-		document.body.classList.add('filter-showed');
-		event.preventDefault();
-	});
-    buttonsFilterBack.forEach(function(buttonFilterBack) {
-        buttonFilterBack.addEventListener('click', function(event) {
-            if (this.closest('.js-popup-wrap')) {
-                let popupWrap = this.closest('.js-popup-wrap');
-                if (popupWrap) {
-                    let toggleButton = popupWrap.querySelector('.js-btn-popup-toggle');
-                    if (toggleButton) {
-                        toggleButton.classList.remove('active');
-                    }
-                }
-            } else {
-                document.body.classList.remove('filter-showed');
-            }
+	if (buttonFilterShow) {
+		buttonFilterShow.addEventListener('click', function(event) {
+			document.body.classList.add('filter-showed');
 			event.preventDefault();
-        });
-    });
+		});
+		buttonsFilterBack.forEach(function(buttonFilterBack) {
+			buttonFilterBack.addEventListener('click', function(event) {
+				if (this.closest('.js-popup-wrap')) {
+					let popupWrap = this.closest('.js-popup-wrap');
+					if (popupWrap) {
+						let toggleButton = popupWrap.querySelector('.js-btn-popup-toggle');
+						if (toggleButton) {
+							toggleButton.classList.remove('active');
+						}
+					}
+				} else {
+					document.body.classList.remove('filter-showed');
+				}
+				event.preventDefault();
+			});
+		});
+	}
 
 
   //form input clear
