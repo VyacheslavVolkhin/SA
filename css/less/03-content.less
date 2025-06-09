@@ -969,23 +969,30 @@
 				border-radius: 0;
 				background: none;
 				box-shadow: none;
+				z-index: inherit;
 			}
 			.menu {
 				max-height: inherit;
 				overflow: visible;
 				display: flex;
+				align-items: flex-start;
 				flex-wrap: wrap;
 				margin: 0 -8px;
 				li {
-					padding: 0 8px;
+					padding: 2px 8px 0 8px;
 					margin-bottom: 8px;
 					flex-shrink: 0;
 					&:has(.select-small) {
+						padding-top: 0;
 						padding-left: 2px;
 						padding-right: 3px;
 					}
 				}
 			}
+		}
+		.frm-select-item.select-second label {
+			padding-left: 11px;
+			padding-right: 11px;
 		}
 		.frm-select-item {
 			&.select-small {
@@ -996,11 +1003,16 @@
 			}
 			label {
 				background: var(--clr-bg-second);
+				border: 1px solid var(--clr-bg-second);
+				&:hover {
+					border-color: var(--clr-att);
+				}
 			}
 			input {
 				&:checked {
 					&~label {
 						background: var(--clr-att-second);
+						border-color: var(--clr-att-second);
 						font-weight: 400;
 					}
 				}

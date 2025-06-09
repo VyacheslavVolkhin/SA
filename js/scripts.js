@@ -358,6 +358,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			let tabsNavElements = this.querySelector('[data-tab].active')
 			tabsNavElements ? tabsNavElements.classList.remove('active') : false
 			e.target.closest('[data-tab]').classList.add('active')
+			alert('ddd')
 			tabsActiveStart()
 			e.preventDefault()
 			e.stopPropagation()
