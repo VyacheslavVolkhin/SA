@@ -30,7 +30,7 @@
             <div class="header-top-panel cnt-section">
                 <div class="inner-wrap">
                     <div class="location-inner-wrap">
-                        <a href="" class="btn button-link">
+                        <a href="" class="btn button-link js-popup-open" data-popup="popup-city">
                             <div class="button-ico">
                                 <img src="./img/icons/location-white.svg" alt="">
                             </div>
@@ -56,6 +56,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="contacts-inner-wrap">
                         <ul class="menu">
                             <li>
@@ -99,9 +100,141 @@
                                 </div>
                             </div>
                             <div class="popup-menu-search-wrap">
-                                <form action="/" class="frm-main-search">
-                                    <input type="text" class="form-input" placeholder="Поиск">
-                                </form>
+                                <div class="form-inner-wrap">
+                                    <form action="/" class="frm-main-search">
+                                        <input type="text" class="form-input inp-error" placeholder="Поиск" onfocus="this.closest('.form-inner-wrap').classList.add('active')" onblur="this.closest('.form-inner-wrap').classList.remove('active')">
+                                    </form>
+                                    <div class="frm-results-wrap elm-dropdown">
+                                        <ul class="menu">
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-result">
+                                                    <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                    <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="popup-menu-content">
                                 <ul class="menu menu-main">
@@ -1434,15 +1567,161 @@
                                     <div class="button-title">Смотреть всё</div>
                                 </a>
                             </div>
+                            <div class="popup-location-wrap">
+                                <div class="popup-location-action">
+                                    <a href="" class="btn button-link js-popup-open" data-popup="popup-city">
+                                        <div class="button-ico">
+                                            <img src="./img/icons/location.svg" alt="">
+                                        </div>
+                                        <div class="button-title">Санкт-Петербург</div>
+                                    </a>
+                                </div>
+                                <div class="popup-location-title">Контакты</div>
+                                <div class="popup-location-value">
+                                    <a class="link-phone" href="tel:88125787777">8(812)578-77-77</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="search-inner-wrap popup-search-wrap js-popup-wrap">
                         <a href="" class="btn-popup btn-action-ico ico-search js-btn-popup-toggle"></a>
                         <div class="popup-content-block js-popup-block">
-                            <form action="/" class="frm-main-search">
-                                <input type="text" class="form-input" placeholder="Поиск">
-                                <button type="submit" class="button-form btn-action-ico ico-search"></button>
-                            </form>
+                            <div class="form-inner-wrap">
+                                <form action="/" class="frm-main-search">
+                                    <input type="text" class="form-input inp-error" placeholder="Поиск" onfocus="this.closest('.form-inner-wrap').classList.add('active')" onblur="this.closest('.form-inner-wrap').classList.remove('active')">
+                                    <button type="submit" class="button-form btn-action-ico ico-search"></button>
+                                </form>
+                                <div class="frm-results-wrap elm-dropdown">
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-result">
+                                                <div class="button-title">г. Санкт-Петербурге, ТЦ "VILLA", секция 1-23</div>
+                                                <div class="button-info">ул. Савушкина, 119, корп. 3</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="actions-inner-wrap">
@@ -1653,6 +1932,137 @@
             <!--/footer-bottom-panel-->
         </footer>
         <!-- /footer -->
+
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box popup-city" id="popup-city">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Ваш город — Санкт-Петербург?</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <div class="popup-buttons-box">
+                        <div class="button-wrap">
+                            <a href="" class="btn js-popup-close">
+                                <div class="button-title">Да, я здесь</div>
+                            </a>
+                        </div>
+                        <div class="button-wrap">
+                            <a href="" class="btn button-second js-popup-open" data-popup="popup-city-select">
+                                <div class="button-title">Изменить город</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-city-select">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Выберите город</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <div class="popup-search-box">
+                        <form action="/" class="frm-main-search">
+                            <input type="text" class="form-input" placeholder="Поиск">
+                            <button type="submit" class="button-form btn-action-ico ico-search"></button>
+                        </form>
+                    </div>
+                    <div class="popup-list-box">
+                        <ul class="menu">
+                            <li>
+                                <div class="frm-select">
+                                    <input type="radio" name="city" id="city01">
+                                    <label for="city01">Москва</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="frm-select">
+                                    <input type="radio" name="city" id="city02">
+                                    <label for="city02">Санкт-Петербург</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="frm-select">
+                                    <input type="radio" name="city" id="city03">
+                                    <label for="city03">Белгород</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="frm-select">
+                                    <input type="radio" name="city" id="city04">
+                                    <label for="city04">Краснодар</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="frm-select">
+                                    <input type="radio" name="city" id="city05">
+                                    <label for="city05">Самара</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="frm-select">
+                                    <input type="radio" name="city" id="city06">
+                                    <label for="city06">Иркутск</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="frm-select">
+                                    <input type="radio" name="city" id="city07">
+                                    <label for="city07">Нижний Новгород</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="frm-select">
+                                    <input type="radio" name="city" id="city08">
+                                    <label for="city08">Москва</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="frm-select">
+                                    <input type="radio" name="city" id="city09">
+                                    <label for="city09">Санкт-Петербург</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="frm-select">
+                                    <input type="radio" name="city" id="city10">
+                                    <label for="city10">Белгород</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="frm-select">
+                                    <input type="radio" name="city" id="city11">
+                                    <label for="city11">Краснодар</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="frm-select">
+                                    <input type="radio" name="city" id="city12">
+                                    <label for="city12">Самара</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="frm-select">
+                                    <input type="radio" name="city" id="city13">
+                                    <label for="city13">Иркутск</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="frm-select">
+                                    <input type="radio" name="city" id="city14">
+                                    <label for="city14">Нижний Новгород</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
 
 
 
