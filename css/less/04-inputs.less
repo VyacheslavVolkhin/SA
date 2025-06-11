@@ -21,6 +21,9 @@
 	&.inp-error {
 		border-color: rgba(185, 7, 1, 0.80) !important;
 	}
+	&.inp-content {
+		border-color: var(--clr-border);
+	}
 	&.inp-filter {
 		height: 30px;
 		background: none;
@@ -633,6 +636,34 @@ select.form-input:required:invalid {
 	&.button-active-close {
 		&:after {
 			background-image: url(../img/icons/close.svg);
+		}
+	}
+}
+.btn-action-more {
+	display: inline-block;
+	position: relative;
+	padding: 0 24px 0 0;
+	&:hover {
+		color: var(--clr-base);
+		&:before {
+			filter: brightness(0) grayscale(1);;
+		}
+	}
+	&:before {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		background: url(../img/icons/arrow-more.svg) center no-repeat;
+		background-size: 100% auto;
+		right: 0;top: 50%;
+		margin-top: -12px;
+		transition: rotate ease 0.2s;
+	}
+	&.active {
+		&:before {
+			rotate: 180deg;
 		}
 	}
 }

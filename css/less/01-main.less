@@ -64,6 +64,18 @@ p, ul, ol, table, blockquote, .bq-text {
 }
 li {
 	position: relative;
+	padding-left: 12px;
+	&:before {
+		content: "";
+		display: block;
+		width: 4px;height: 4px;
+		border-radius: 50%;
+		background: currentColor;
+		position: absolute;
+		top: 0.62em;
+		left: 0px;
+		margin-top: -2px;
+	}
 }
 .menu, .list {
     margin: 0;
