@@ -544,6 +544,17 @@ select.form-input:required:invalid {
 			}
 		}
 	}
+	&.ico-trash {
+		&:before {
+			background-image: url(../img/icons/trash.svg);
+			filter: brightness(0) grayscale(1);;
+		}
+		&:hover {
+			&:before {
+				filter: none;
+			}
+		}
+	}
     &.ico-arrow {
         z-index: 20;
         cursor: pointer;

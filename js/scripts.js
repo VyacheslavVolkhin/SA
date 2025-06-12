@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
+	
 
   //form input clear
   const inputFields = document.querySelectorAll(".frm-field-input-action .form-input");

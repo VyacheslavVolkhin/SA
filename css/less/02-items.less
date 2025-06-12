@@ -90,12 +90,16 @@
 	.tile-price-title {
 		font-size: 12px;
 		color: var(--clr-base-second);
-		margin: 0 0 0 0;
+		margin: 0 0 2px 0;
 		font-weight: 400;
 	}
 	.tile-price-value {
 		margin: 0;
 		line-height: 1.1;
+		font-size: 18px;
+		line-height: 1.2;
+		font-weight: 500;
+		color: var(--clr-base);
 	}
 	.tile-button-main {
 		flex: 1;
@@ -225,10 +229,24 @@
 	}
 	.slider-pagination-lines {
 		position: absolute;
-		left: 0;right: 0;bottom: 24px !important;
+		left: 15px;right: 15px;bottom: 24px !important;
 		z-index: 10;
+		width: auto;
 	}
-
+	.tile-button-delete {
+		position: absolute;
+		z-index: 8;
+		top: 0;
+		right: 0;
+		width: 44px;height: 44px;
+	}
+	.btn-action-ico {
+		&.ico-del {
+			&:before {
+				background-size: 36px auto;
+			}
+		}
+	}
 }
 .item-tile-action {
 	display: flex;
@@ -738,7 +756,7 @@
 		}
 	}
 }
-.tile-feature-row {
+.tile-feature-row, .elm-feature-row {
 	margin-bottom: 4px;
 	font-weight: 400;
 	display: flex;
@@ -756,12 +774,12 @@
 	&:last-child {
 		margin-bottom: 0;
 	}
-	.tile-feature-title {
+	.tile-feature-title, .elm-feature-title {
 		flex: 1;
 		padding-right: 10px;
 		color: var(--clr-base-light);
 	}
-	.tile-feature-value {
+	.tile-feature-value, .elm-feature-value {
 		flex-shrink: 0;
 		color: var(--clr-base);
 		text-align: right;
@@ -910,6 +928,10 @@
 	.tile-actions-panel {
 		.tile-price-title {
 			margin-bottom: 2px;
+			font-size: 16px;
+		}
+		.tile-price-value {
+			font-size: 22px;
 		}
 		.tile-button-action {
 		}
@@ -922,6 +944,53 @@
 		}
 	}
 	.item-tile-catalog {
+		.tile-button-delete {
+			width: 50px;height: 50px;
+		}
+		&.type-row {
+			padding: 4px;
+			display: flex;
+			flex-direction: row;
+			align-items: stretch;
+			min-height: 427px;
+			.tile-main-wrap {
+				flex: 0 0 auto;
+				margin-bottom: 16px;
+			}
+			.tile-photo-wrap {
+				width: 45%;
+				max-width: 34rem;
+				margin: 0;
+				padding: 0;
+				flex-shrink: 0;
+				.tile-photo {
+					aspect-ratio: inherit;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					height: auto;
+					width: auto;
+				}
+			}
+			.tile-info-wrap {
+				flex: 1;
+				padding: 16px 28px 16px 24px;
+			}
+			.tile-slider-wrap {
+				height: 100%;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+			.tile-slider, .tile-sl-wrap {
+				height: 100%;
+				position: relative;
+			}
+		}
 		&.tile-collection {
 			padding: 6px;
 			.tile-photo {
@@ -1055,5 +1124,13 @@
 		padding: 0 20px;
 		font-size: 13px;
 		border-radius: 17px;
+	}
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+	.item-tile-catalog {
+		&.type-row {
+			.tile-photo-wrap {
+			}
+		}
 	}
 }
