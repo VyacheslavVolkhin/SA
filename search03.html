@@ -20,7 +20,7 @@
     <script src="./js/scripts.js" defer></script>
 </head>
 
-<body>
+<body class="">
     <!-- wrap -->
     <div class="wrap">
 
@@ -1759,25 +1759,1381 @@
 
         <!-- page -->
         <div class="page-full">
-            <br><br><br><br><br>
-            <ul style="font-size: 2em;">
-                <li><a href="main.html">Main</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="card-collection.html">Card Collection</a></li>
-                <li><a href="brand.html">Brand</a></li>
-                <li><a href="brands.html">Brands</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="order01.html">Order 01</a></li>
-                <li><a href="order02.html">Order 02</a></li>
-                <li><a href="search01.html">Search 01</a></li>
-                <li><a href="search02.html">Search 02</a></li>
-                <li><a href="search03.html">Search 03</a></li>
-                <li><a href="404.html">404</a></li>
-                <li style="margin: 2em 0 0.4em 0;">----POPUPS----</li>
-                <li><a href="" class="js-popup-open" data-popup="popup-order">Popup order</a></li>
-            </ul>
-            <br><br><br><br><br>
+
+            <!--title-box-->
+            <div class="title-box">
+                <h1 class="h2-title">Результаты поиска</h1>
+            </div>
+            <!--/title-box-->
+
+            <!--search-box-->
+            <div class="search-box">
+                <div class="form-inner-wrap">
+                    <form action="/" class="frm-main-search frm-field-input-action">
+                        <input type="text" class="form-input inp-content" placeholder="Поиск">
+                        <div class="btn-action-ico ico-del button-field-clear"></div>
+                    </form>
+                    <div class="form-inner-button">
+                        <button type="submit" class="btn">
+                            <div class="button-title">Искать</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--/search-box-->
+
+            <!--tiles-box-->
+            <div class="tiles-box">
+                <div class="title-inner-wrap">
+                    <h2 class="section-title h2-title">Подходяшие товары</h2>
+                </div>
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog tile-main tile-collection">
+                            <div class="tile-photo-wrap">
+                                <div class="tile-slider-inner-wrap slider-tile">
+                                    <div class="tile-slider-wrap swiper">
+                                        <div class="tile-slider swiper-wrapper">
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-pagination slider-tile-pagination slider-pagination-lines"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-main-wrap">
+                                    <div class="tile-title-wrap">
+                                        <div class="tile-title h4-title">Терравива Грэй</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Бренд</div>
+                                            <div class="tile-feature-value">
+                                                Эстет
+                                                <div class="tile-ico ico-large">
+                                                    <img src="./img/icons/cat-logo.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Страна производителя</div>
+                                            <div class="tile-feature-value">
+                                                Россия
+                                                <div class="tile-ico">
+                                                    <img src="./img/icons/cat-lang.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-art-wrap tile-separate-wrap">
+                                        <div class="tile-art">арт. 610015000489</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Поверхность</div>
+                                            <div class="tile-feature-value">Матовая</div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Категория </div>
+                                            <div class="tile-feature-value">Плитка, керамогранит, мозаика, декор, ступень, плинтус, бордюр</div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Имитация </div>
+                                            <div class="tile-feature-value">Коричневый, бежевый, серый, белый, желтый</div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Помещение </div>
+                                            <div class="tile-feature-value">Стены, пол, ванна, кухня, коридор, гостинная</div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Размеры </div>
+                                            <div class="tile-feature-value">7,5х30, 30х60, 60х60х2, 60х60, 15х120, 20х120, 20х160, 30х120, 40х80, 45х90, 60х120, 80х80, 80х160, 120х120, 120х278х0,6 </div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Цвет </div>
+                                            <div class="tile-feature-value">
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color01.svg" alt="">
+                                                </div>
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color02.svg" alt="">
+                                                </div>
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color03.svg" alt="">
+                                                </div>
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color04.svg" alt="">
+                                                </div>
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color05.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile-second-wrap">
+                                    <div class="tile-price-wrap">
+                                        <div class="tile-price">От 14 000 ₽/м&sup2;</div>
+                                    </div>
+                                    <div class="tile-actions-panel">
+                                        <div class="tile-button-main">
+                                            <a href="" class="btn">
+                                                <div class="button-title">В коллекцию</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-button-action">
+                                            <a href="" class="btn-action-ico ico-fav-toggle button-active-toggle button-action-border js-btn-tgl"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog tile-main tile-collection">
+                            <div class="tile-photo-wrap">
+                                <div class="tile-slider-inner-wrap slider-tile">
+                                    <div class="tile-slider-wrap swiper">
+                                        <div class="tile-slider swiper-wrapper">
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-pagination slider-tile-pagination slider-pagination-lines"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-main-wrap">
+                                    <div class="tile-title-wrap">
+                                        <div class="tile-title h4-title">Терравива Грэй</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Бренд</div>
+                                            <div class="tile-feature-value">
+                                                Эстет
+                                                <div class="tile-ico ico-large">
+                                                    <img src="./img/icons/cat-logo.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Страна производителя</div>
+                                            <div class="tile-feature-value">
+                                                Россия
+                                                <div class="tile-ico">
+                                                    <img src="./img/icons/cat-lang.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-art-wrap tile-separate-wrap">
+                                        <div class="tile-art">арт. 610015000489</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Поверхность</div>
+                                            <div class="tile-feature-value">Матовая</div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Категория </div>
+                                            <div class="tile-feature-value">Плитка, керамогранит, мозаика, декор, ступень, плинтус, бордюр</div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Имитация </div>
+                                            <div class="tile-feature-value">Коричневый, бежевый, серый, белый, желтый</div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Помещение </div>
+                                            <div class="tile-feature-value">Стены, пол, ванна, кухня, коридор, гостинная</div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Размеры </div>
+                                            <div class="tile-feature-value">7,5х30, 30х60, 60х60х2, 60х60, 15х120, 20х120, 20х160, 30х120, 40х80, 45х90, 60х120, 80х80, 80х160, 120х120, 120х278х0,6 </div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Цвет </div>
+                                            <div class="tile-feature-value">
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color01.svg" alt="">
+                                                </div>
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color02.svg" alt="">
+                                                </div>
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color03.svg" alt="">
+                                                </div>
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color04.svg" alt="">
+                                                </div>
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color05.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile-second-wrap">
+                                    <div class="tile-price-wrap">
+                                        <div class="tile-price">От 14 000 ₽/м&sup2;</div>
+                                    </div>
+                                    <div class="tile-actions-panel">
+                                        <div class="tile-button-main">
+                                            <a href="" class="btn">
+                                                <div class="button-title">В коллекцию</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-button-action">
+                                            <a href="" class="btn-action-ico ico-fav-toggle button-active-toggle button-action-border js-btn-tgl"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog tile-main tile-collection">
+                            <div class="tile-photo-wrap">
+                                <div class="tile-slider-inner-wrap slider-tile">
+                                    <div class="tile-slider-wrap swiper">
+                                        <div class="tile-slider swiper-wrapper">
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-pagination slider-tile-pagination slider-pagination-lines"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-main-wrap">
+                                    <div class="tile-title-wrap">
+                                        <div class="tile-title h4-title">Терравива Грэй</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Бренд</div>
+                                            <div class="tile-feature-value">
+                                                Эстет
+                                                <div class="tile-ico ico-large">
+                                                    <img src="./img/icons/cat-logo.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Страна производителя</div>
+                                            <div class="tile-feature-value">
+                                                Россия
+                                                <div class="tile-ico">
+                                                    <img src="./img/icons/cat-lang.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-art-wrap tile-separate-wrap">
+                                        <div class="tile-art">арт. 610015000489</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Поверхность</div>
+                                            <div class="tile-feature-value">Матовая</div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Категория </div>
+                                            <div class="tile-feature-value">Плитка, керамогранит, мозаика, декор, ступень, плинтус, бордюр</div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Имитация </div>
+                                            <div class="tile-feature-value">Коричневый, бежевый, серый, белый, желтый</div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Помещение </div>
+                                            <div class="tile-feature-value">Стены, пол, ванна, кухня, коридор, гостинная</div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Размеры </div>
+                                            <div class="tile-feature-value">7,5х30, 30х60, 60х60х2, 60х60, 15х120, 20х120, 20х160, 30х120, 40х80, 45х90, 60х120, 80х80, 80х160, 120х120, 120х278х0,6 </div>
+                                        </div>
+                                        <div class="tile-feature-row type-line">
+                                            <div class="tile-feature-title">Цвет </div>
+                                            <div class="tile-feature-value">
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color01.svg" alt="">
+                                                </div>
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color02.svg" alt="">
+                                                </div>
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color03.svg" alt="">
+                                                </div>
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color04.svg" alt="">
+                                                </div>
+                                                <div class="elm-color">
+                                                    <img src="./img/icons/color05.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile-second-wrap">
+                                    <div class="tile-price-wrap">
+                                        <div class="tile-price">От 14 000 ₽/м&sup2;</div>
+                                    </div>
+                                    <div class="tile-actions-panel">
+                                        <div class="tile-button-main">
+                                            <a href="" class="btn">
+                                                <div class="button-title">В коллекцию</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-button-action">
+                                            <a href="" class="btn-action-ico ico-fav-toggle button-active-toggle button-action-border js-btn-tgl"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+            <!--/tiles-box-->
+
+            <!--tiles-box-->
+            <div class="tiles-box">
+                <div class="title-inner-wrap">
+                    <h2 class="section-title h2-title">Подходяшие товары</h2>
+                </div>
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog tile-main">
+                            <div class="tile-photo-wrap">
+                                <div class="tile-slider-inner-wrap slider-tile">
+                                    <div class="tile-slider-wrap swiper">
+                                        <div class="tile-slider swiper-wrapper">
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-pagination slider-tile-pagination slider-pagination-lines"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-main-wrap">
+                                    <div class="tile-title-wrap">
+                                        <div class="tile-title h4-title">Керамогранит Italon Терравива Грэй</div>
+                                        <div class="tile-sticker color-red">-40%</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Бренд</div>
+                                            <div class="tile-feature-value">
+                                                Эстет
+                                                <div class="tile-ico ico-large">
+                                                    <img src="./img/icons/cat-logo.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Страна производителя</div>
+                                            <div class="tile-feature-value">
+                                                Россия
+                                                <div class="tile-ico">
+                                                    <img src="./img/icons/cat-lang.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-art-wrap tile-separate-wrap">
+                                        <div class="tile-art">арт. 610015000489</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Коллекция</div>
+                                            <div class="tile-feature-value">Спешиал</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Вид товара</div>
+                                            <div class="tile-feature-value">Керамогранит</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Размер</div>
+                                            <div class="tile-feature-value">60x60 см</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Имитация</div>
+                                            <div class="tile-feature-value">Под камень</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Тип поверхности</div>
+                                            <div class="tile-feature-value">Something</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile-second-wrap">
+                                    <div class="tile-price-wrap">
+                                        <div class="tile-price">14 000 руб./ м&sup2;</div>
+                                        <div class="tile-price price-old">14 000 руб./ м&sup2;</div>
+                                        <div class="tile-sticker color-red">-40%</div>
+                                    </div>
+                                    <div class="tile-counter-wrap">
+                                        <div class="frm-field-select-panel">
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat01" id="cat01-01" data-content="cat01-01" checked>
+                                                <label for="cat01-01">
+                                                    <div class="lbl-title">м&sup2;</div>
+                                                </label>
+                                            </div>
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat01" id="cat01-02" data-content="cat01-02">
+                                                <label for="cat01-02">
+                                                    <div class="lbl-title">штуки</div>
+                                                </label>
+                                            </div>
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat01" id="cat01-03" data-content="cat01-03">
+                                                <label for="cat01-03">
+                                                    <div class="lbl-title">упаковки</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat01-01">
+                                            <div class="frm-field-counter js-counter" name="cat01">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" м&sup2;" data-step="0.1" data-min="0" data-max="15">
+                                            </div>
+                                            <div class="tile-counter-value">12 шт или 6 упаковок</div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat01-02">
+                                            <div class="frm-field-counter js-counter" name="cat01">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" шт." data-step="1" data-min="0" data-max="30">
+                                            </div>
+                                            <div class="tile-counter-value">15 шт или 9 упаковок</div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat01-03">
+                                            <div class="frm-field-counter js-counter" name="cat01">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" уп." data-step="1" data-min="0" data-max="45">
+                                            </div>
+                                            <div class="tile-counter-value">2 шт или 2 упаковок</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tile-actions-panel">
+                                        <div class="tile-button-main">
+                                            <a href="" class="btn">
+                                                <div class="button-title">В корзину</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-button-action">
+                                            <a href="" class="btn-action-ico ico-fav-toggle button-active-toggle button-action-border js-btn-tgl"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog tile-main">
+                            <div class="tile-photo-wrap">
+                                <div class="tile-slider-inner-wrap slider-tile">
+                                    <div class="tile-slider-wrap swiper">
+                                        <div class="tile-slider swiper-wrapper">
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-pagination slider-tile-pagination slider-pagination-lines"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-main-wrap">
+                                    <div class="tile-title-wrap">
+                                        <div class="tile-title h4-title">Керамогранит Italon Терравива Грэй</div>
+                                        <div class="tile-sticker color-red">-40%</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Бренд</div>
+                                            <div class="tile-feature-value">
+                                                Эстет
+                                                <div class="tile-ico ico-large">
+                                                    <img src="./img/icons/cat-logo.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Страна производителя</div>
+                                            <div class="tile-feature-value">
+                                                Россия
+                                                <div class="tile-ico">
+                                                    <img src="./img/icons/cat-lang.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-art-wrap tile-separate-wrap">
+                                        <div class="tile-art">арт. 610015000489</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Коллекция</div>
+                                            <div class="tile-feature-value">Спешиал</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Вид товара</div>
+                                            <div class="tile-feature-value">Керамогранит</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Размер</div>
+                                            <div class="tile-feature-value">60x60 см</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Имитация</div>
+                                            <div class="tile-feature-value">Под камень</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Тип поверхности</div>
+                                            <div class="tile-feature-value">Something</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile-second-wrap">
+                                    <div class="tile-price-wrap">
+                                        <div class="tile-price">14 000 руб./ м&sup2;</div>
+                                        <div class="tile-price price-old">14 000 руб./ м&sup2;</div>
+                                        <div class="tile-sticker color-red">-40%</div>
+                                    </div>
+                                    <div class="tile-counter-wrap">
+                                        <div class="frm-field-select-panel">
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat02" id="cat02-01" data-content="cat02-01" checked>
+                                                <label for="cat02-01">
+                                                    <div class="lbl-title">м&sup2;</div>
+                                                </label>
+                                            </div>
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat02" id="cat02-02" data-content="cat02-02">
+                                                <label for="cat02-02">
+                                                    <div class="lbl-title">штуки</div>
+                                                </label>
+                                            </div>
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat02" id="cat02-03" data-content="cat02-03">
+                                                <label for="cat02-03">
+                                                    <div class="lbl-title">упаковки</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat02-01">
+                                            <div class="frm-field-counter js-counter" name="cat02">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" м&sup2;" data-step="0.1" data-min="0" data-max="15">
+                                            </div>
+                                            <div class="tile-counter-value">12 шт или 6 упаковок</div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat02-02">
+                                            <div class="frm-field-counter js-counter" name="cat02">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" шт." data-step="1" data-min="0" data-max="30">
+                                            </div>
+                                            <div class="tile-counter-value">15 шт или 9 упаковок</div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat02-03">
+                                            <div class="frm-field-counter js-counter" name="cat02">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" уп." data-step="1" data-min="0" data-max="45">
+                                            </div>
+                                            <div class="tile-counter-value">2 шт или 2 упаковок</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tile-actions-panel">
+                                        <div class="tile-button-main">
+                                            <a href="" class="btn">
+                                                <div class="button-title">В корзину</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-button-action">
+                                            <a href="" class="btn-action-ico ico-fav-toggle button-active-toggle button-action-border js-btn-tgl"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog tile-main">
+                            <div class="tile-photo-wrap">
+                                <div class="tile-slider-inner-wrap slider-tile">
+                                    <div class="tile-slider-wrap swiper">
+                                        <div class="tile-slider swiper-wrapper">
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-pagination slider-tile-pagination slider-pagination-lines"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-main-wrap">
+                                    <div class="tile-title-wrap">
+                                        <div class="tile-title h4-title">Керамогранит Italon Терравива Грэй</div>
+                                        <div class="tile-sticker color-red">-40%</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Бренд</div>
+                                            <div class="tile-feature-value">
+                                                Эстет
+                                                <div class="tile-ico ico-large">
+                                                    <img src="./img/icons/cat-logo.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Страна производителя</div>
+                                            <div class="tile-feature-value">
+                                                Россия
+                                                <div class="tile-ico">
+                                                    <img src="./img/icons/cat-lang.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-art-wrap tile-separate-wrap">
+                                        <div class="tile-art">арт. 610015000489</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Коллекция</div>
+                                            <div class="tile-feature-value">Спешиал</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Вид товара</div>
+                                            <div class="tile-feature-value">Керамогранит</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Размер</div>
+                                            <div class="tile-feature-value">60x60 см</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Имитация</div>
+                                            <div class="tile-feature-value">Под камень</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Тип поверхности</div>
+                                            <div class="tile-feature-value">Something</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile-second-wrap">
+                                    <div class="tile-price-wrap">
+                                        <div class="tile-price">14 000 руб./ м&sup2;</div>
+                                        <div class="tile-price price-old">14 000 руб./ м&sup2;</div>
+                                        <div class="tile-sticker color-red">-40%</div>
+                                    </div>
+                                    <div class="tile-counter-wrap">
+                                        <div class="frm-field-select-panel">
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat03" id="cat03-01" data-content="cat03-01" checked>
+                                                <label for="cat03-01">
+                                                    <div class="lbl-title">м&sup2;</div>
+                                                </label>
+                                            </div>
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat03" id="cat03-02" data-content="cat03-02">
+                                                <label for="cat03-02">
+                                                    <div class="lbl-title">штуки</div>
+                                                </label>
+                                            </div>
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat03" id="cat03-03" data-content="cat03-03">
+                                                <label for="cat03-03">
+                                                    <div class="lbl-title">упаковки</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat03-01">
+                                            <div class="frm-field-counter js-counter" name="cat03">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" м&sup2;" data-step="0.1" data-min="0" data-max="15">
+                                            </div>
+                                            <div class="tile-counter-value">12 шт или 6 упаковок</div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat03-02">
+                                            <div class="frm-field-counter js-counter" name="cat03">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" шт." data-step="1" data-min="0" data-max="30">
+                                            </div>
+                                            <div class="tile-counter-value">15 шт или 9 упаковок</div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat03-03">
+                                            <div class="frm-field-counter js-counter" name="cat03">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" уп." data-step="1" data-min="0" data-max="45">
+                                            </div>
+                                            <div class="tile-counter-value">2 шт или 2 упаковок</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tile-actions-panel">
+                                        <div class="tile-button-main">
+                                            <a href="" class="btn">
+                                                <div class="button-title">В корзину</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-button-action">
+                                            <a href="" class="btn-action-ico ico-fav-toggle button-active-toggle button-action-border js-btn-tgl"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog tile-main">
+                            <div class="tile-photo-wrap">
+                                <div class="tile-slider-inner-wrap slider-tile">
+                                    <div class="tile-slider-wrap swiper">
+                                        <div class="tile-slider swiper-wrapper">
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-pagination slider-tile-pagination slider-pagination-lines"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-main-wrap">
+                                    <div class="tile-title-wrap">
+                                        <div class="tile-title h4-title">Керамогранит Italon Терравива Грэй</div>
+                                        <div class="tile-sticker color-red">-40%</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Бренд</div>
+                                            <div class="tile-feature-value">
+                                                Эстет
+                                                <div class="tile-ico ico-large">
+                                                    <img src="./img/icons/cat-logo.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Страна производителя</div>
+                                            <div class="tile-feature-value">
+                                                Россия
+                                                <div class="tile-ico">
+                                                    <img src="./img/icons/cat-lang.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-art-wrap tile-separate-wrap">
+                                        <div class="tile-art">арт. 610015000489</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Коллекция</div>
+                                            <div class="tile-feature-value">Спешиал</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Вид товара</div>
+                                            <div class="tile-feature-value">Керамогранит</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Размер</div>
+                                            <div class="tile-feature-value">60x60 см</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Имитация</div>
+                                            <div class="tile-feature-value">Под камень</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Тип поверхности</div>
+                                            <div class="tile-feature-value">Something</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile-second-wrap">
+                                    <div class="tile-price-wrap">
+                                        <div class="tile-price">14 000 руб./ м&sup2;</div>
+                                        <div class="tile-price price-old">14 000 руб./ м&sup2;</div>
+                                        <div class="tile-sticker color-red">-40%</div>
+                                    </div>
+                                    <div class="tile-counter-wrap">
+                                        <div class="frm-field-select-panel">
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat04" id="cat04-01" data-content="cat04-01" checked>
+                                                <label for="cat04-01">
+                                                    <div class="lbl-title">м&sup2;</div>
+                                                </label>
+                                            </div>
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat04" id="cat04-02" data-content="cat04-02">
+                                                <label for="cat04-02">
+                                                    <div class="lbl-title">штуки</div>
+                                                </label>
+                                            </div>
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat04" id="cat04-03" data-content="cat04-03">
+                                                <label for="cat04-03">
+                                                    <div class="lbl-title">упаковки</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat04-01">
+                                            <div class="frm-field-counter js-counter" name="cat04">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" м&sup2;" data-step="0.1" data-min="0" data-max="15">
+                                            </div>
+                                            <div class="tile-counter-value">12 шт или 6 упаковок</div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat04-02">
+                                            <div class="frm-field-counter js-counter" name="cat04">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" шт." data-step="1" data-min="0" data-max="30">
+                                            </div>
+                                            <div class="tile-counter-value">15 шт или 9 упаковок</div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat04-03">
+                                            <div class="frm-field-counter js-counter" name="cat04">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" уп." data-step="1" data-min="0" data-max="45">
+                                            </div>
+                                            <div class="tile-counter-value">2 шт или 2 упаковок</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tile-actions-panel">
+                                        <div class="tile-button-main">
+                                            <a href="" class="btn">
+                                                <div class="button-title">В корзину</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-button-action">
+                                            <a href="" class="btn-action-ico ico-fav-toggle button-active-toggle button-action-border js-btn-tgl"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog tile-main">
+                            <div class="tile-photo-wrap">
+                                <div class="tile-slider-inner-wrap slider-tile">
+                                    <div class="tile-slider-wrap swiper">
+                                        <div class="tile-slider swiper-wrapper">
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-pagination slider-tile-pagination slider-pagination-lines"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-main-wrap">
+                                    <div class="tile-title-wrap">
+                                        <div class="tile-title h4-title">Керамогранит Italon Терравива Грэй</div>
+                                        <div class="tile-sticker color-red">-40%</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Бренд</div>
+                                            <div class="tile-feature-value">
+                                                Эстет
+                                                <div class="tile-ico ico-large">
+                                                    <img src="./img/icons/cat-logo.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Страна производителя</div>
+                                            <div class="tile-feature-value">
+                                                Россия
+                                                <div class="tile-ico">
+                                                    <img src="./img/icons/cat-lang.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-art-wrap tile-separate-wrap">
+                                        <div class="tile-art">арт. 610015000489</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Коллекция</div>
+                                            <div class="tile-feature-value">Спешиал</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Вид товара</div>
+                                            <div class="tile-feature-value">Керамогранит</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Размер</div>
+                                            <div class="tile-feature-value">60x60 см</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Имитация</div>
+                                            <div class="tile-feature-value">Под камень</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Тип поверхности</div>
+                                            <div class="tile-feature-value">Something</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile-second-wrap">
+                                    <div class="tile-price-wrap">
+                                        <div class="tile-price">14 000 руб./ м&sup2;</div>
+                                        <div class="tile-price price-old">14 000 руб./ м&sup2;</div>
+                                        <div class="tile-sticker color-red">-40%</div>
+                                    </div>
+                                    <div class="tile-counter-wrap">
+                                        <div class="frm-field-select-panel">
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat05" id="cat05-01" data-content="cat05-01" checked>
+                                                <label for="cat05-01">
+                                                    <div class="lbl-title">м&sup2;</div>
+                                                </label>
+                                            </div>
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat05" id="cat05-02" data-content="cat05-02">
+                                                <label for="cat05-02">
+                                                    <div class="lbl-title">штуки</div>
+                                                </label>
+                                            </div>
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat05" id="cat05-03" data-content="cat05-03">
+                                                <label for="cat05-03">
+                                                    <div class="lbl-title">упаковки</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat05-01">
+                                            <div class="frm-field-counter js-counter" name="cat05">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" м&sup2;" data-step="0.1" data-min="0" data-max="15">
+                                            </div>
+                                            <div class="tile-counter-value">12 шт или 6 упаковок</div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat05-02">
+                                            <div class="frm-field-counter js-counter" name="cat05">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" шт." data-step="1" data-min="0" data-max="30">
+                                            </div>
+                                            <div class="tile-counter-value">15 шт или 9 упаковок</div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat05-03">
+                                            <div class="frm-field-counter js-counter" name="cat05">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" уп." data-step="1" data-min="0" data-max="45">
+                                            </div>
+                                            <div class="tile-counter-value">2 шт или 2 упаковок</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tile-actions-panel">
+                                        <div class="tile-button-main">
+                                            <a href="" class="btn">
+                                                <div class="button-title">В корзину</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-button-action">
+                                            <a href="" class="btn-action-ico ico-fav-toggle button-active-toggle button-action-border js-btn-tgl"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog tile-main">
+                            <div class="tile-photo-wrap">
+                                <div class="tile-slider-inner-wrap slider-tile">
+                                    <div class="tile-slider-wrap swiper">
+                                        <div class="tile-slider swiper-wrapper">
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="tile-sl-wrap swiper-slide">
+                                                <div class="tile-photo photo-cover">
+                                                    <img src="./img/cat01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-pagination slider-tile-pagination slider-pagination-lines"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-main-wrap">
+                                    <div class="tile-title-wrap">
+                                        <div class="tile-title h4-title">Керамогранит Italon Терравива Грэй</div>
+                                        <div class="tile-sticker color-red">-40%</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Бренд</div>
+                                            <div class="tile-feature-value">
+                                                Эстет
+                                                <div class="tile-ico ico-large">
+                                                    <img src="./img/icons/cat-logo.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Страна производителя</div>
+                                            <div class="tile-feature-value">
+                                                Россия
+                                                <div class="tile-ico">
+                                                    <img src="./img/icons/cat-lang.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-art-wrap tile-separate-wrap">
+                                        <div class="tile-art">арт. 610015000489</div>
+                                    </div>
+                                    <div class="tile-features-wrap">
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Коллекция</div>
+                                            <div class="tile-feature-value">Спешиал</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Вид товара</div>
+                                            <div class="tile-feature-value">Керамогранит</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Размер</div>
+                                            <div class="tile-feature-value">60x60 см</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Имитация</div>
+                                            <div class="tile-feature-value">Под камень</div>
+                                        </div>
+                                        <div class="tile-feature-row">
+                                            <div class="tile-feature-title">Тип поверхности</div>
+                                            <div class="tile-feature-value">Something</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile-second-wrap">
+                                    <div class="tile-price-wrap">
+                                        <div class="tile-price">14 000 руб./ м&sup2;</div>
+                                        <div class="tile-price price-old">14 000 руб./ м&sup2;</div>
+                                        <div class="tile-sticker color-red">-40%</div>
+                                    </div>
+                                    <div class="tile-counter-wrap">
+                                        <div class="frm-field-select-panel">
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat06" id="cat06-01" data-content="cat06-01" checked>
+                                                <label for="cat06-01">
+                                                    <div class="lbl-title">м&sup2;</div>
+                                                </label>
+                                            </div>
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat06" id="cat06-02" data-content="cat06-02">
+                                                <label for="cat06-02">
+                                                    <div class="lbl-title">штуки</div>
+                                                </label>
+                                            </div>
+                                            <div class="frm-select-button">
+                                                <input type="radio" name="cat06" id="cat06-03" data-content="cat06-03">
+                                                <label for="cat06-03">
+                                                    <div class="lbl-title">упаковки</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat06-01">
+                                            <div class="frm-field-counter js-counter" name="cat06">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" м&sup2;" data-step="0.1" data-min="0" data-max="15">
+                                            </div>
+                                            <div class="tile-counter-value">12 шт или 6 упаковок</div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat06-02">
+                                            <div class="frm-field-counter js-counter" name="cat06">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" шт." data-step="1" data-min="0" data-max="30">
+                                            </div>
+                                            <div class="tile-counter-value">15 шт или 9 упаковок</div>
+                                        </div>
+                                        <div class="frm-content" data-content="cat06-03">
+                                            <div class="frm-field-counter js-counter" name="cat06">
+                                                <button class="js-button-counter-plus btn-action-ico ico-plus button-plus"></button>
+                                                <button class="js-button-counter-minus btn-action-ico ico-minus button-minus"></button>
+                                                <input type="text" value="1" class="form-input js-input-counter" data-unit=" уп." data-step="1" data-min="0" data-max="45">
+                                            </div>
+                                            <div class="tile-counter-value">2 шт или 2 упаковок</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tile-actions-panel">
+                                        <div class="tile-button-main">
+                                            <a href="" class="btn">
+                                                <div class="button-title">В корзину</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-button-action">
+                                            <a href="" class="btn-action-ico ico-fav-toggle button-active-toggle button-action-border js-btn-tgl"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+                <div class="more-box">
+                    <a href="" class="btn button-link">
+                        <div class="button-title">Показать ещё</div>
+                        <div class="button-ico">
+                            <img src="./img/icons/more.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--/tiles-box-->
+
+
         </div>
         <!-- /page -->
 

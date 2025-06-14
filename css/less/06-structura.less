@@ -50,6 +50,11 @@ html.with-fancybox body.hide-scrollbar {
 }
 .page-full {
 	flex: 1 0 auto;
+	&:has(.error-box) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 }
 .wrap, .footer {
 	// -webkit-transform: translate3d(0,0,0);

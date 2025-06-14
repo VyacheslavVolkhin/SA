@@ -20,7 +20,7 @@
     <script src="./js/scripts.js" defer></script>
 </head>
 
-<body>
+<body class="">
     <!-- wrap -->
     <div class="wrap">
 
@@ -1759,25 +1759,34 @@
 
         <!-- page -->
         <div class="page-full">
-            <br><br><br><br><br>
-            <ul style="font-size: 2em;">
-                <li><a href="main.html">Main</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="card-collection.html">Card Collection</a></li>
-                <li><a href="brand.html">Brand</a></li>
-                <li><a href="brands.html">Brands</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="order01.html">Order 01</a></li>
-                <li><a href="order02.html">Order 02</a></li>
-                <li><a href="search01.html">Search 01</a></li>
-                <li><a href="search02.html">Search 02</a></li>
-                <li><a href="search03.html">Search 03</a></li>
-                <li><a href="404.html">404</a></li>
-                <li style="margin: 2em 0 0.4em 0;">----POPUPS----</li>
-                <li><a href="" class="js-popup-open" data-popup="popup-order">Popup order</a></li>
-            </ul>
-            <br><br><br><br><br>
+
+            <!--title-box-->
+            <div class="title-box">
+                <h1 class="h2-title">Результаты поиска</h1>
+            </div>
+            <!--/title-box-->
+
+            <!--search-box-->
+            <div class="search-box">
+                <div class="form-inner-wrap">
+                    <form action="/" class="frm-main-search frm-field-input-action">
+                        <input type="text" class="form-input inp-content" placeholder="Поиск">
+                        <div class="btn-action-ico ico-del button-field-clear"></div>
+                    </form>
+                    <div class="form-inner-button">
+                        <button type="submit" class="btn">
+                            <div class="button-title">Искать</div>
+                        </button>
+                    </div>
+                </div>
+                <div class="info-inner-wrap">
+                    <div class="elm-ico">
+                        <img src="./img/icons/load.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--/search-box-->
+
         </div>
         <!-- /page -->
 
