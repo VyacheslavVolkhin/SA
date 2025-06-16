@@ -384,6 +384,9 @@ select.form-input:required:invalid {
         }
     }
     .button-title {
+		&.type-border {
+			border-bottom: 1px dashed;
+		}
         &[data-title] {
             &:before {
                 content: attr(data-title);

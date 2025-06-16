@@ -4,6 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
   Fancybox.bind("[data-fancybox]", {
     //settings
   });
+
+
+	//tooltip
+	tippy('.js-clear-tippy-helper', {
+			content(reference) {
+			const dataTitle = reference.getAttribute('data-title');
+			return dataTitle.replace(/\n/g, '<br>');
+		},
+		allowHTML: true
+	});
   
 
 
@@ -34,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
-	
+
 
   //form input clear
   const inputFields = document.querySelectorAll(".frm-field-input-action .form-input");
@@ -361,7 +371,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			let tabsNavElements = this.querySelector('[data-tab].active')
 			tabsNavElements ? tabsNavElements.classList.remove('active') : false
 			e.target.closest('[data-tab]').classList.add('active')
-			alert('ddd')
 			tabsActiveStart()
 			e.preventDefault()
 			e.stopPropagation()

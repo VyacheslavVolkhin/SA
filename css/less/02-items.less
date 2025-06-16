@@ -652,7 +652,8 @@
     }
 }
 .elm-sticker, .tile-sticker {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
 	vertical-align: middle;
 	position: relative;
 	max-width: 100%;
@@ -670,6 +671,16 @@
 	flex-shrink: 0;
 	&.color-red {
 		background: rgba(185, 7, 1, 0.80);
+	}
+	&.type-border {
+		border: 1px solid currentColor;
+		background-color: transparent;
+		line-height: 1;
+		font-weight: 500;
+		&.color-red {
+			color: rgba(185, 7, 1, 0.80);
+			background-color: transparent;
+		}
 	}
 }
 .tile-grid-image {
@@ -879,6 +890,24 @@
 		width: 20px;height: 20px;
 		border-radius: 50%;
 		margin: 0 8px 0 0;
+	}
+}
+.elm-tooltip {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	width: 24px;height: 24px;
+	cursor: pointer;
+	&:before {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		background: url(../img/icons/info.svg) center no-repeat;
+		background-size: 100% auto;
+		top: 50%;left: 50%;
+		margin: -12px 0 0 -12px;
 	}
 }
 @media (max-width: 1399px) {
