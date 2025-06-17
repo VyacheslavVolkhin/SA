@@ -3,7 +3,7 @@
 \* ----------------------------------- */
 .info-features-box {
 	position: relative;
-	margin-bottom: 4.6rem;
+	margin-bottom: var(--mbSection);
 	font-weight: 500;
 	line-height: 1.1;
 	.box-inner-wrap {
@@ -12,16 +12,22 @@
 	.actions-inner-wrap {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 -2rem 0 0;
+		margin: 32px -2rem -16px 0;
 	}
 	.action-wrap {
 		flex-shrink: 0;
 		padding: 0 2rem 0 0;
-		margin-bottom: 2rem;
-		max-width: 100%;
+		margin-bottom: 16px;
+		width: 100%;
 		.btn {
 			text-align: left;
 			justify-content: flex-start;
+			height: 56px;
+			border-radius: 12px;
+			padding: 0 20px;
+			min-width: 307px;
+			font-size: 14px;
+			width: 100%;
 			&.button-second {
 				&:not(:hover) {
 					color: var(--clr-att);
@@ -89,6 +95,9 @@
 		font-weight: 500;
 		line-height: 1.2;
 		margin-bottom: 24px;
+	}
+	.section-content {
+		margin-bottom: 32px;
 	}
 	p {
 		margin: 0;
@@ -1641,10 +1650,28 @@ body.popup-open {
 @media (min-width: 768px) {
 	.info-features-box {
 		.wrap-half {
+			display: flex;
 			.section-content {
-				columns: 2;
-				column-gap: 30px;
+				width: 50%;
+				flex-shrink: 0;
+				padding-right: 15px;
+				margin-bottom: 0px;
+				max-width: 360px;
+				&:last-child {
+					padding-right: 0;
+					padding-left: 15px;
+				}
 			}
+		}
+		.section-title {
+			width: 100%;
+			flex-shrink: 0;
+		}
+		.action-wrap {
+			width: auto;
+		}
+		.actions-inner-wrap {
+			margin-top: 0;
 		}
 	}
 	.brand-about-box {
@@ -1717,12 +1744,14 @@ body.popup-open {
 		.box-outer-wrap {
 			display: flex;
 			flex-wrap: wrap;
+			align-items: flex-start;
 			margin: 0 -15px;
 		}
 		.box-inner-wrap {
 			padding: 0 15px;
 			width: 25%;
 			flex-shrink: 0;
+			flex-wrap: wrap;
 			display: block;
 			&:not(.active) {
 				display: block;
@@ -1730,20 +1759,26 @@ body.popup-open {
 		}
 		.wrap-half {
 			width: 50%;
+			display: flex;
 			.section-content {
-				columns: 2;
-				column-gap: 30px;
+				
 			}
+		}
+		.section-content {
+			margin-bottom: 0;
 		}
 		.action-wrap {
 			.btn {
 				height: 64px;
-				border-radius: 12px;
-				padding: 0 20px;
-				min-width: 307px;
 				font-size: 16px;
+				.button-ico {
+					&.ico-large {
+						width: 32px;height: 32px;
+					}
+				}
 			}
 		}
+		
 	}
 	.info-order-box {
 		.box-inner-wrap {
