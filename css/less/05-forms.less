@@ -277,6 +277,13 @@
 	line-height: 16px;
 	margin-bottom: 8px;
 }
+.field-required {
+	&:after {
+		content: "*";
+		display: inline;
+		color: var(--clr-alert);
+	}
+}
 .frm-row,
 .frm-field,
 .frm-row-submit {

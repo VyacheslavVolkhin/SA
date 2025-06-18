@@ -23,6 +23,9 @@
 	}
 	&.inp-content {
 		border-color: var(--clr-border);
+		&:focus, &:hover {
+			border-color: var(--clr-att);
+		}
 	}
 	&.inp-filter {
 		height: 30px;
@@ -105,6 +108,7 @@ select.form-input:required:invalid {
 			filter: none;
 		}
 	}
+	
 	&.button-filter {
 		height: 36px;
 		border-radius: 12px;
@@ -355,6 +359,29 @@ select.form-input:required:invalid {
 		}
 		.button-ico {
 			filter: none
+		}
+	}
+	&.button-toggle {
+		text-align: left;
+		justify-content: flex-start;
+		padding-right: 52px;
+		&:before {
+			content: "";
+			display: block;
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			background: url(../img/icons/arrow-more.svg) center no-repeat;
+			background-size: 100% auto;
+			top: 50%;
+			right: 20px;
+			margin-top: -12px;
+			transition: rotate ease 0.2s;
+		}
+		&.active {
+			&:before {
+				rotate: 180deg;
+			}
 		}
 	}
     &.button-border {
