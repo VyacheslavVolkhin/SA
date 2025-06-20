@@ -3643,6 +3643,68 @@ html.with-fancybox body.hide-scrollbar {
   position: relative;
   z-index: 30;
 }
+.filter-catalog-box .filter-selected-reset {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 12px 12px 0;
+}
+.filter-catalog-box .filter-selected-reset .btn {
+  height: 38px;
+  line-height: 38px;
+  color: #2D3648;
+  font-size: 14px;
+  font-weight: 400;
+}
+.filter-catalog-box .filter-selected-reset .btn:hover {
+  color: var(--clr-att);
+}
+.filter-catalog-box .filter-selected-reset .btn .button-title {
+  line-height: 1;
+  border-bottom: 1px solid;
+}
+.filter-catalog-box .filter-selected-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -10px -12px 20px 0;
+  margin: -10px -12px 2rem 0;
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.filter-catalog-box .filter-selected-wrap:first-child {
+  margin-top: 0;
+}
+.filter-catalog-box .filter-selected-content {
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 19px;
+  padding: 0 20px 0 20px;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  background: var(--clr-att-select);
+  max-width: 100%;
+  margin: 0 12px 12px 0;
+}
+.filter-catalog-box .filter-selected-title {
+  height: 38px;
+  line-height: 38px;
+  position: relative;
+  font-size: 14px;
+  color: var(--clr-base-second);
+  padding: 0 8px 0 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.filter-catalog-box .filter-selected-items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .filter-catalog-box .filter-action-wrap {
   display: none;
 }
@@ -6197,6 +6259,30 @@ select.form-input:required:invalid {
 .btn .button-active-toggle.active:has(.button-ico-active) .button-ico-active {
   display: block;
 }
+.btn-selected {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--clr-base);
+  padding: 0 26px 0 6px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.btn-selected .button-del {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  margin-top: -12px;
+  z-index: 2;
+  cursor: pointer;
+}
 .btn-action-ico {
   min-width: 0;
   border-radius: 0;
@@ -6435,7 +6521,7 @@ select.form-input:required:invalid {
   border: 1px solid var(--clr-bg-blue);
   min-width: 14px;
   text-align: center;
-  padding: 0 3px;
+  padding: 0 8px;
   font-size: 8px;
   font-weight: 500;
   color: var(--clr-base-white);
