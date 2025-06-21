@@ -1502,6 +1502,72 @@ body.popup-open {
 	}
 }
 @media (max-width: 1023px) {
+	.info-toggle-box {
+		&:last-child {
+			margin-bottom: 60px;
+		}
+		.btn-popup.btn {
+			min-height: 56px;
+			font-size: 14px;
+		}
+		.item-tile-salon {
+			.tile-title {
+				font-size: 16px;
+			}
+		}
+	}
+	.tiles-box {
+		&:has(.item-tile-order) {
+			margin-bottom: 32px;
+		}
+	}
+	.form-box {
+		.field-title {
+			font-size: 12px;
+			margin-bottom: 2px;
+		}
+		.form-input {
+			height: 50px;
+			font-size: 14px;
+		}
+		.frm-field {
+			margin-bottom: 20px;
+		}
+	}
+	.order-box.type-bg {
+		.form-inner-wrap {
+			padding-top: 28px;
+			padding-bottom: 28px;
+		}
+		.frm-section-title {
+			margin-bottom: 20px;
+		}
+		.frm-total-wrap {
+			.elm-feature-row {
+				margin-bottom: 8px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			.elm-feature-value {
+				font-size: 16px;
+			}
+			.row-main {
+				.elm-feature-value {
+					font-size: 18px;
+				}
+			}
+		}
+		.elm-feature-row {
+			margin-bottom: 16px;
+			&.row-main {
+				margin-bottom: 24px;
+			}
+		}
+		.elm-feature-value {
+			font-size: 14px;
+		}
+	}
 	.tabs-box {
 		&.type-mobile-scroll {
 			position: relative;
@@ -1819,6 +1885,18 @@ body.popup-open {
 			}
 			&:has(.item-tile-material) {
 				width: 204px;
+			}
+		}
+	}
+	.title-box {
+		&.title-order {
+			font-size: 18px;
+			margin-bottom: 40px;
+			.subtitle-medium {
+				margin-bottom: 12px;
+			}
+			.section-title {
+				margin-bottom: 24px;
 			}
 		}
 	}
