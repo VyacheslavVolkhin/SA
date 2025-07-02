@@ -1,6 +1,7 @@
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
+
 .field-message {
 	display: block;
 	font-size: 14px;
@@ -12,6 +13,27 @@
 	}
 	&:last-child {
 		margin-bottom: 0;
+	}
+}
+.frm-field-datetime {
+	display: flex;
+	margin: 0 -1px;
+	.field-input {
+		width: 50%;
+		flex-shrink: 0;
+		padding: 0 1px;
+		&:first-child {
+			.form-input {
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+		}
+		&:last-child {
+			.form-input {
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+		}
 	}
 }
 .frm-field-input-action {
@@ -96,6 +118,47 @@
 	.frm-select-button {
 		width: auto;
 		flex: 1;
+	}
+	.frm-select-input {
+		flex: 1;
+		padding-left: 10px;
+	}
+	.frm-field-counter {
+		padding: 0;
+		background: var(--clr-bg-second);
+		border-color: var(--clr-bg-second);
+		height: 32px;
+		.button-plus,
+		.button-minus {
+			display: none;
+		}
+		.form-input {
+			padding: 0 10px;
+			font-weight: 500;
+			height: 30px;
+		}
+	}
+	&.type-light {
+		background-color: #fff;
+		border-color: #fff;
+	}
+	&.type-small {
+		padding: 4px;
+		border-radius: 12px;
+		.frm-select-button {
+			label {
+				height: 18px;
+				font-size: 10px;
+				padding: 0 8px;
+			}
+		}
+		.frm-field-counter {
+			height: 18px;
+			.form-input {
+				height: 16px;
+				font-size: 12px;
+			}
+		}
 	}
 }
 .frm-field-counter {

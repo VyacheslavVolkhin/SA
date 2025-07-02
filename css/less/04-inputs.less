@@ -606,6 +606,21 @@ select.form-input:required:invalid {
 			}
 		}
 	}
+	&.ico-sort {
+		&:before {
+			background-image: url(../img/icons/sort.svg);
+		}
+		&.active-up {
+			&:before {
+				background-image: url(../img/icons/sort-up.svg);
+			}
+		}
+		&.active-down {
+			&:before {
+				background-image: url(../img/icons/sort-down.svg);
+			}
+		}
+	}
     &.ico-arrow {
         z-index: 20;
         cursor: pointer;
@@ -671,6 +686,20 @@ select.form-input:required:invalid {
     &.ico-close {
 		&:before {
 			background-image: url(../img/icons/close.svg);
+		}
+    }
+    &.ico-cart-add {
+		&:before {
+			background-image: url(../img/icons/cart-add.svg);
+		}
+		&:after {
+			background-image: url(../img/icons/cart-added.svg);
+			opacity: 0;
+		}
+    }
+    &.ico-cart {
+		&:before {
+			background-image: url(../img/icons/cart.svg);
 		}
     }
     &.ico-clear {

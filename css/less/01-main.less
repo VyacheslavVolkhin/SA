@@ -310,6 +310,89 @@ h6, .h6-title {
 		background-size: 20px auto;
 	}
 }
+.tbl-inner-wrap {
+	margin-bottom: 24px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	table {
+		thead {
+			th, td {
+				line-height: 24px;
+				font-weight: 400;
+				padding-top: 12px;
+				padding-bottom: 12px;
+				text-align: left;
+				height: auto;
+				border: none;
+			}
+		}
+		th, td {
+			font-size: 13px;
+			line-height: 20px;
+			vertical-align: middle;
+			text-align: left;
+			font-weight: 400;
+			color: inherit;
+			padding: 16px 12px;
+			height: 8rem;
+			border: none;
+			border-top: 1px solid var(--clr-border);
+
+		}
+		.elm-price {
+			display: inline;
+		}
+		.col-counter {
+			width: 224px;
+		}
+		.col-action {
+			width: 58px;
+		}
+	}
+	.btn-action-ico {
+		&.ico-trash {
+			&:before {
+				filter: none;
+			}
+		}
+	}
+}
+table {
+	.frm-field-select-panel {
+		width: 196px;
+		margin: 0 auto;
+	}
+	.tbl-button-sort {
+		width: 24px;height: 24px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 8px;
+	}
+	.tbl-button-action {
+		width: 24px;height: 24px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.tbl-unit {
+		display: block;
+		font-size: 8px;
+		line-height: 20px;
+		color: var(--clr-base-second);
+	}
+	.elm-price {
+		&:after {
+			padding-left: 4px;
+		}
+	}
+	.button-disabled {
+		pointer-events: none;
+		opacity: 0.6;
+	}
+	.item-tile-product-small {
+		width: 200px;
+	}
+}
 @media (max-width: 1399px) {
     :root {
         font-size: 9.5px;
